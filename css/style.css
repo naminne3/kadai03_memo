@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fce4ec;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+h1 {
+  color: #d81b60;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.todo-section {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 20px;
+  max-width: 1200px; /* デスクトップで広く表示 */
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-area {
+  text-align: left;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: 2px solid #f8bbd0;
+  outline: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.task-area,
+.date-area {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1em;
+  font-weight: bold;
+  color: #d81b60;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.task-input,
+.date {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+.btn-add-btn {
+  background: #ff80ab;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px; /* 丸みを維持 */
+  width: 100%; /* フル幅に設定 */
+  max-width: 300px; /* 横長にするための最大幅を広く設定 */
+  padding: 15px 50px; /* パディングを広く設定して文字が収まるように */
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.2em; /* 文字が見やすくなるようにフォントサイズを調整 */
+  transition: background 0.3s ease;
+  text-align: center; /* 文字が中央に配置されるように */
+}
+
+.add-btn:hover {
+  background: #f06292;
+}
+
+
+.error-msg {
+  font-size: 1em;
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+  display: none;
+}
+
+.error-msg.show {
+  display: block;
+}
+
+.display-task {
+  text-align: left;
+  width: 100%;
+  margin: 60px auto 0 auto; /* 下の余白を増やしました */
+  padding: 20px; /* 周囲の余白を追加 */
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* タスクアイテム */
+.task-item {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #f8bbd0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffeefc;
+  padding: 15px;
+  transition: 0.3s linear;
+}
+
+.item-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item-date {
+  background: #ff80ab;
+  color: #FFF;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.complete {
+  background: #756971;
+}
+
+/* ボタンデザイン */
+.btn {
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.complete-btn {
+  background: #7c4dff;
+}
+
+.delete-btn {
+  background: #d50000;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .todo-section {
+    padding: 30px 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .task-item {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .item-date {
+    font-size: 0.7em;
+  }
+
+  .btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .display-task {
+    margin: 40px auto 0 auto;
+    padding: 15px;
+  }
+}

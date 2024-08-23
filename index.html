@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todo-section">
+        <h1>TODOリスト</h1>
+        <div class="input-area">
+
+
+          <div class="task-area">
+            <label for="task-input">TODO</label>
+            <!--タスクの入力フォーム-->
+            <input type="text" class="task-input" id="task-input">
+           
+            <!--エラーメッセージ-->
+            <div class="error-msg">タスクを入力してください!</div>
+          </div>
+
+
+          <div class="date-area">
+            <label for="date">期日</label>
+
+            <!--期日の入力フォーム-->
+            <input type="date" class="date" id="date">
+          </div>
+
+
+             <!--追加ボタン-->
+          <button class="btn-add-btn">追加</button>
+        </div>
+
+        <div class="display-task">
+          <!--タスクを表示する-->
+          <ol class="task-list"></ol>
+        </div>
+
+      </div>
+
+
+          <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
