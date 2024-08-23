@@ -21,7 +21,7 @@ h1 {
   text-align: center;
   margin: 0 auto;
   padding: 50px 20px;
-  max-width: 1200px; /* デスクトップで広く表示 */
+  max-width: 1200px; 
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -102,8 +102,8 @@ label {
 .display-task {
   text-align: left;
   width: 100%;
-  margin: 60px auto 0 auto; /* 下の余白を増やしました */
-  padding: 20px; /* 周囲の余白を追加 */
+  margin: 60px auto 0 auto; 
+  padding: 20px; 
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
